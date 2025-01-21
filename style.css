@@ -14,7 +14,7 @@
 }
 /* shared style */
 
-.Hero-section, .header, .curriculum {
+.Hero-section, .header, .curriculum, .our-stories {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -33,10 +33,13 @@ button{
 .blue-color{
    color:rgb(1, 172, 253);
 }
+.border-radius{
+    border-radius: 16px 16px 0px 0px;
+}
 
 .display-flex {
     display: flex;
-    /* margin: 30px auto; */
+    
 }
 
 /* nav style */
@@ -215,10 +218,54 @@ li>a{
     align-items: center;
 }
 /* our stories */
-.Our-Stories{
+.our-stories{
     background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
+.stories-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.main-story{
+    display: flex;
+    gap: 20px;
 
+
+}
+.stories-title{
+    text-align: center;
+    color: rgb(0, 0, 0);    
+    font-size: 2.87rem;
+    font-weight: 600;
+    padding: 30px 60px 35px 30px;
+}
+.bg-color{
+    border-radius: 0 0 16px 16px;
+    background: rgb(255, 255, 255);
+    width: 540px;
+}
+.sml-color{
+    border-radius: 0 0 16px 16px;
+    background: rgb(255, 255, 255);
+    width: 291px
+}
+.story-title{
+    font-size: 1rem;
+    font-weight: 700;
+    padding:35px 37px 55px 33px;
+     
+}
+.stories-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.stories-description{
+    color: rgb(102, 102, 102);
+font-size: 15.34px;
+font-weight: 500;
+padding: 30px 60px 35px 30px;
+}
+ 
 /* responsive media section */
 @media screen and (max-width:576px){
     .nav-title ,
