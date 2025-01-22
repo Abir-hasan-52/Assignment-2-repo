@@ -21,6 +21,7 @@
     max-width: 1200px;
     margin: 0 auto;
 } 
+ 
 .hide{
     display: none;
 }
@@ -277,7 +278,7 @@ li>a{
 .bg-color{
     border-radius: 0 0 16px 16px;
     background: rgb(255, 255, 255);
-     width:33.75rem ; 
+    width:33.75rem ; 
     position: relative;
     top: -5px;
 }
@@ -419,11 +420,23 @@ padding-bottom: 20px;
     /* curriculum section */
     .curriculum{
         flex-direction: column;
+    
     }
+    /* .curriculum{
+        height: 50%;
+
+    }
+    .curriculum-card3{
+        height: 100%;
+    } */
     .angle{
         display: none;
     }
+    
      /* story section */
+     .our-stories{
+        height: 100%;
+     }
     .main-story{
         flex-direction: column;
     }
