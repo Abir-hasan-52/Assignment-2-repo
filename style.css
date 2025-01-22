@@ -149,8 +149,9 @@ li>a{
     background-image: url(assets/bg.png);
     height: 100vh;
     background-size: cover;
+    box-sizing: border-box;
     border: 1px dashed silver;
-    
+
 }
 .curriculum-title{
     text-align: center;
@@ -241,28 +242,33 @@ li>a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+      
 }
 .main-story{
     display: flex;
     gap: 20px;
 
-
+    
 }
 .stories-title{
     text-align: center;   
     font-size: 2.87rem;
     font-weight: 700;
-    padding: 60px 0px 60px 0px;
+    padding: 38px 0px 40px 0px;
 }
 .bg-color{
     border-radius: 0 0 16px 16px;
     background: rgb(255, 255, 255);
     width: 540px;
+    position: relative;
+    top: -5px;
 }
 .sml-color{
     border-radius: 0 0 16px 16px;
     background: rgb(255, 255, 255);
-    width: 291px
+    width: 291px;
+    position: relative;
+    top: -5px;
 }
 .story-title{
     font-size: 1rem;
@@ -349,7 +355,8 @@ padding-bottom: 20px;
     .nav-title ,
     .nav-icon,
     .button,
-    .marquee{
+    .marquee,
+    .angle{
         display: none;
     }
     .menu-icon{
@@ -398,7 +405,10 @@ padding-bottom: 20px;
     }
      /* story section */
     .main-story{
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    .stories-img{
+        grid-template-columns: repeat(2, 1fr);
     }
     .show{
         display: none;
